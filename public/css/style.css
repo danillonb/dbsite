@@ -1,0 +1,533 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+
+.container, .form{
+	width: 980px;
+	margin: 0 auto;
+	padding: 0 10px;
+	/*border:1px solid #000;*/
+}
+.btn{
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.3em;
+	color: #da1642;
+	border:4px solid #da1642;
+	margin-top: 20px;
+	display: block;
+}
+.btn:hover{
+	color: #00a4dc;
+	border:4px solid #00a4dc;
+}
+.btn2{
+	color: #fff;
+	border:4px solid #fff;
+}
+.btn2:hover{
+	color: #da1642;
+	border:4px solid #da1642;
+}
+/* Menu */
+.menu-bg{
+	width: 100%;
+	top: 0;
+	position: fixed;
+	background:#fff;
+	border-bottom:2px solid #c1c1c1;
+	z-index: 999;
+}
+.menu-logo{
+	margin-left: 10px;
+}
+.menu{
+	max-width: 960px;
+	margin:0 auto;
+	padding:15px 0;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:center;
+}
+.menu a{
+	color:#0088ae;
+}
+.menu-bg .menu .menu-nav .telefone{
+	color: #da1642;
+	font-size: 0.8em;
+}
+.menu-nav ul{
+	display: flex;
+	flex-wrap:wrap;
+}
+.menu-nav a{
+	font-size:0.9em;
+	display: block;
+	padding:10px;
+}
+.menu-nav a:hover{
+	color: #da1642;
+}
+/*Menu*/
+
+/*Intrudução*/
+.introducao{
+	width: 100%;
+	border-bottom:5px solid #0088ae;
+	background-image: url("../img/bg-introducao.jpg");
+	background-size: cover;
+	display: flex;
+	flex-wrap:wrap;
+}
+.introducao .container{
+	margin-top: 108px;
+	padding: 0 20px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:center;
+}
+.text-intro h1{
+	font-size: 4em;
+	margin-top: 100px;
+	font-weight: 900;
+	line-height: 1em;
+	text-transform: uppercase;
+	color: #00a4dc;
+}
+.text-intro h2{
+	font-size: 1.8em;
+	color:#da1642;
+}
+.text-intro p{
+	font-family: 'Lora', Helvetica, serif;
+	line-height: 30px;
+	color: #797979;
+	max-width: 500px;
+}
+.text-intro h1:after{
+	content: "";
+	width: 3px;
+	height: 300px;
+	background-color: #00a4dc;
+	/*background-image: url("../img/traco-intro.png");*/
+	float: right;
+	position: relative;
+	top: -80px;
+	transform: rotate(12deg);
+}
+/*Intrudução*/
+
+/*Web Design*/
+.webdesign{
+	width: 100%;
+	padding-top: 120px;
+	border-bottom:5px solid #0088ae;
+	background-image: url("../img/bg-webdesign.jpg");
+	background-size: cover;
+	display: flex;
+	flex-wrap:wrap;
+}
+.webdesign .container{
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
+.text-web h1{
+	font-size: 100px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #fff;
+}
+.text-web h1:after{
+	content: "";
+	width: 3px;
+	height: 300px;
+	background-color: #fff;
+	float: right;
+	position: relative;
+	transform: rotate(12deg);
+}
+.text-web p{
+	font-family: 'Lora', Helvetica, serif;
+	line-height: 30px;
+	color: #e5e5e5;
+	max-width: 650px;
+}
+.container-web{
+	padding-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	/*border:1px solid #000;*/
+}
+.quads{
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+/*Efeito Box*/
+	.lista-item {
+		width: 320px;
+	}
+	.lista-item {
+		background: white;
+		margin-bottom: 20px;
+		padding: 10px;
+		border:2px solid #0088ae;
+	}
+	.faq-titulo {
+		cursor: pointer;
+		padding: 10px;
+		font-size: 1.4em;
+		font-family: monospace;
+		color: #8F6ED5;
+	}
+	.faq-titulo::after {
+		content: '+';
+		float: right;
+		transition: transform .3s ease;
+		color: #da1642;
+	}
+	.faq-conteudo {
+		margin-top: 20px;
+		padding: 20px 10px 10px 10px;
+		font-family: 'Lora', Helvetica, serif;
+		line-height: 30px;
+		color: #797979;
+		max-width: 500px;
+		display: none;
+		text-align: center;
+	}
+
+	.trigger-input {
+		display: none;
+	}
+	.trigger-input:checked + .trigger-titulo .faq-conteudo {
+		display: block;
+	}
+
+	.trigger-input:checked + .trigger-titulo .faq-titulo::after {
+		transform: rotate(45deg) scale(1.08);
+	}
+
+	.trigger-titulo .faq-titulo-1 h3, .trigger-titulo .faq-titulo-2 h3, .trigger-titulo .faq-titulo-3 h3{
+		text-align: center;
+		font-weight: 900;
+		color: #00a4dc;
+		font-size: 1.4em;
+		line-height: 1em;
+		font-family: "Montserrat", sans-serif;
+
+	}
+	.trigger-titulo .faq-titulo-1 h3 span, .trigger-titulo .faq-titulo-2 h3 span, .trigger-titulo .faq-titulo-3 h3 span{
+		font-weight: 400;
+	}
+	.trigger-titulo .faq-titulo-1 p, .trigger-titulo .faq-titulo-2 p, .trigger-titulo .faq-titulo-3 p{
+		text-align: center;
+		font-weight: 200;
+		margin-top: 20px;
+		color: #00a4dc;
+		justify-content:space-between;
+		align-items:center;
+	}
+	/*Efeito Box*/
+/*Web Design*/
+
+
+/*Design Gráfico*/
+.designgrafico{
+	width: 100%;
+	padding-top: 120px;
+	border-bottom:5px solid #0088ae;
+	display: flex;
+	flex-wrap:wrap;
+	background-image: url("../img/bg-grafico.jpg");
+	background-size: cover;
+}
+.text-grafico h1{
+	font-size: 75px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #00a4dc;
+}
+.text-grafico h1:after{
+	content: "";
+	width: 3px;
+	height: 250px;
+	background-color: #00a4dc;
+	float: right;
+	position: relative;
+	transform: rotate(12deg);
+}
+.text-grafico p{
+	font-family: 'Lora', Helvetica, serif;
+	line-height: 30px;
+	color: #797979;
+	max-width: 650px;
+}
+.designgrafico .container{
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
+/*EFEITO BOX - DESIGN GRAFICO - CONTEUDO DESIGN GRAFICO*/
+	.lista-item2 {
+		width: 320px;
+	}
+	.lista-item2 {
+		background: #00a4dc;
+		margin-bottom: 20px;
+		padding: 10px;
+		border:2px solid #0088ae;
+	}
+	.faq-titulo2 {
+		cursor: pointer;
+		padding: 10px;
+		font-size: 1.4em;
+		font-family: monospace;
+		color: #8F6ED5;
+	}
+	.faq-titulo2::after {
+		content: '+';
+		float: right;
+		transition: transform .3s ease;
+		color: #da1642;
+	}
+	.faq-conteudo2 {
+		margin-top: 20px;
+		padding: 20px 10px 10px 10px;
+		font-family: 'Lora', Helvetica, serif;
+		line-height: 30px;
+		color: #eee;
+		max-width: 500px;
+		display: none;
+		text-align: center;
+	}
+
+	.trigger-input2 {
+		display: none;
+	}
+	.trigger-input2:checked + .trigger-titulo2 .faq-conteudo2 {
+		display: block;
+	}
+
+	.trigger-input2:checked + .trigger-titulo2 .faq-titulo2::after {
+		transform: rotate(45deg) scale(1.08);
+	}
+
+	.trigger-titulo2 .faq-titulo2-1 h3, .trigger-titulo2 .faq-titulo2-2 h3, .trigger-titulo2 .faq-titulo2-3 h3{
+		text-align: center;
+		font-weight: 900;
+		color: #fff;
+		font-size: 1.4em;
+		line-height: 1em;
+		font-family: "Montserrat", sans-serif;
+
+	}
+	.trigger-titulo2 .faq-titulo2-1 h3 span, .trigger-titulo2 .faq-titulo2-2 h3 span, .trigger-titulo2 .faq-titulo2-3 h3 span{
+		font-weight: 400;
+	}
+	.trigger-titulo2 .faq-titulo2-1 p, .trigger-titulo2 .faq-titulo2-2 p, .trigger-titulo .faq-titulo2-3 p{
+		text-align: center;
+		font-weight: 200;
+		margin-top: 20px;
+		color: #fff;
+		justify-content:space-between;
+		align-items:center;
+	}
+	/*EFEITO BOX - DESIGN GRAFICO - CONTEUDO DESIGN GRAFICO*/
+/*EFEITO BOX - DESIGN GRAFICO - CONTEUDO DESIGN GRAFICO*/
+	.lista-item3 {
+		width: 320px;
+	}
+	.lista-item3 {
+		background: #00a4dc;
+		margin-bottom: 20px;
+		padding: 10px;
+		border:2px solid #0088ae;
+	}
+	.faq-titulo3 {
+		cursor: pointer;
+		padding: 10px;
+		font-size: 1.4em;
+		font-family: monospace;
+		color: #8F6ED5;
+	}
+	.faq-titulo3::after {
+		content: '+';
+		float: right;
+		transition: transform .3s ease;
+		color: #da1642;
+	}
+	.faq-conteudo3 {
+		margin-top: 20px;
+		padding: 20px 10px 10px 10px;
+		font-family: 'Lora', Helvetica, serif;
+		line-height: 30px;
+		color: #eee;
+		max-width: 500px;
+		display: none;
+		text-align: center;
+	}
+
+	.trigger-input3 {
+		display: none;
+	}
+	.trigger-input3:checked + .trigger-titulo .faq-conteudo3 {
+		display: block;
+	}
+
+	.trigger-input3:checked + .trigger-titulo .faq-titulo3::after {
+		transform: rotate(45deg) scale(1.08);
+	}
+
+	.trigger-titulo .faq-titulo3-1 h3, .trigger-titulo .faq-titulo3-2 h3, .trigger-titulo .faq-titulo3-3 h3{
+		text-align: center;
+		font-weight: 900;
+		color: #fff;
+		font-size: 1.4em;
+		line-height: 1em;
+		font-family: "Montserrat", sans-serif;
+
+	}
+	.trigger-titulo .faq-titulo3-1 h3 span, .trigger-titulo .faq-titulo3-2 h3 span, .trigger-titulo .faq-titulo3-3 h3 span{
+		font-weight: 400;
+	}
+	.trigger-titulo .faq-titulo3-1 p, .trigger-titulo .faq-titulo3-2 p, .trigger-titulo .faq-titulo3-3 p{
+		text-align: center;
+		font-weight: 200;
+		margin-top: 20px;
+		color: #fff;
+		justify-content:space-between;
+		align-items:center;
+	}
+	/*EFEITO BOX - DESIGN GRAFICO - CONTEUDO DESIGN GRAFICO*/
+/*Design Gráfico*/
+
+/*orcamento*/
+.orcamentos{
+	width: 100%;
+	padding-top: 120px;
+	padding-bottom: 80px;
+	border-bottom:5px solid #0088ae;
+	display: flex;
+	flex-wrap:wrap;
+	background-image: url("../img/bg-orcamento.jpg");
+	background-size: cover;
+}
+.orcamentos .container, .orcamentos .form{
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
+.text-orcamento h1{
+	font-size: 90px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #00a4dc;
+}
+.text-orcamento h1:after{
+	content: "";
+	width: 3px;
+	height: 250px;
+	background-color: #00a4dc;
+	float: right;
+	position: relative;
+	transform: rotate(12deg);
+}
+.text-orcamento p{
+	font-family: 'Lora', Helvetica, serif;
+	line-height: 30px;
+	color: #797979;
+	max-width: 650px;
+}
+.nao-aparece{
+	display: none !important;
+}
+.formphp input, .formphp textarea{
+	display: block;
+	padding: 10px;
+	min-width: 600px;
+	border:2px solid #00a0da;
+	color: #797979;
+}
+.formphp textarea{
+	height: 100px;
+}
+.formphp label{
+	font-weight: 900;
+	text-transform: lowercase;
+	font-size: 	1.5em;
+	color: #00a0da;
+}
+.formphp button{
+	background-color: transparent;
+	padding: 15px;
+}
+.infos-orca {
+	margin-top: 20px;
+}
+.infos-orca h3{
+	font-weight: 900;
+	font-size: 1.5em;
+	color: #00a0da;
+	text-transform: uppercase;
+	line-height: 14px;
+}
+.infos-orca h3 .span{
+	font-size: 0.6em !important;
+}
+.infos-orca p{
+	font-size: 0.9em;
+	margin-bottom: 20px;
+	font-family: "Lora", serif;
+	color: #797979;
+}
+.infos-orca p a{
+	color: #797979;
+}
+.infos-orca p a:hover{
+	color: #da1642;
+}
+/*orcamento*/
+
+/*Rodapé*/
+.rodape{
+	width: 100%;
+	padding-top: 120px;
+	padding-bottom: 80px;
+	border-bottom:5px solid #0088ae;
+	display: flex;
+	flex-wrap:wrap;
+	background-image: url("../img/bg-rodape.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+.rodape .container{
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
+.rodape .container a{
+	font-size: 2em;
+	font-weight: 900;
+	color: #fff;
+}
+
+.rodape .container a:hover{
+	color: #da1642;
+}
+.corporation{
+	font-family: "Lora", serif;
+	font-size: 14px;
+	text-align: center !important;
+	margin: 30px auto 0px auto;
+	color: #e5e5e5;
+}
+
+/*Rodapé*/
